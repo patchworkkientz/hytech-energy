@@ -14,7 +14,7 @@ export default function IncentivesAndFinancing() {
                 <div className="page-banner finance-banner">
                     <div className="banner-content">
                         {/* <h2>Pay off your renewable energy installation with the same money your paying for utilities</h2> */}
-                        <a href="/#open_form" id="open_form"></a>
+                        <a href="/?open_form" id="open_form"></a>
                     </div>
                 </div>
                 <div className="content-main finance-content">

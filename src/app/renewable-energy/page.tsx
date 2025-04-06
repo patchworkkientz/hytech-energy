@@ -14,7 +14,7 @@ export default function RenewableEnergy() {
                 <div className="page-banner renewable-banner">
                     <div className="banner-content">
                         {/* <h1>Partially off-grid if not entirely-off!</h1> */}
-                        <a href="/#open_form" id="open_form"></a>
+                        <a href="/?open_form" id="open_form"></a>
                     </div>
                 </div>
                 <div className="content-main renewable-energy-content">

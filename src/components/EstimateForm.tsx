@@ -1,6 +1,7 @@
 "use client"
-import { useEffect, useState } from "react";
+import { useState } from "react";
 import { useSearchParams } from 'next/navigation'
+import { Suspense } from 'react'
 
 export default function EstimateForm() {
 
@@ -20,7 +21,7 @@ export default function EstimateForm() {
     // }, []);
 
     return (
-        <>
+        <Suspense>
             {
                 openForm ? (
                     <input id="start" type="checkbox" defaultChecked />
@@ -121,6 +122,6 @@ export default function EstimateForm() {
                     </div>
                 </form>
             </div>
-        </>
+        </Suspense>
     )
 }
