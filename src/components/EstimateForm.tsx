@@ -5,10 +5,8 @@ import { Suspense } from 'react'
 
 export default function EstimateForm() {
 
-    const searchParams = useSearchParams()
     const [progressBar, setProgressBar] = useState("25%")
 
-    const openForm = searchParams.has("open_form")
 
     function moveProgress(percentage: string) {
         setProgressBar(percentage)
@@ -20,16 +18,20 @@ export default function EstimateForm() {
 
     // }, []);
 
+    function OpenForm() {
+        const searchParams = useSearchParams()
+        const openForm = searchParams.has("open_form")
+        
+        if (openForm) {
+            return <input id="start" type="checkbox" defaultChecked />
+        } else {
+            return <input id="start" type="checkbox" />
+        }
+    }
+
     return (
         <Suspense>
-            {
-                openForm ? (
-                    <input id="start" type="checkbox" defaultChecked />
-                ) : (
-                    <input id="start" type="checkbox" />
-                )
-            }
-
+            <OpenForm />
             <div className="wrapper_mobile">
                 <div className="progress_bar" />
             </div>
