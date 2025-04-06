@@ -21,7 +21,7 @@ export default function AnimatedBanner() {
         var createdStyleTag = document.createElement("style");
 
         var content_width = window.getComputedStyle(
-            document.querySelector('.our-mother-earth'), '::after'
+            document.querySelector('.our-mother-earth') as Element, '::after'
         ).getPropertyValue('width');
 
         // from app.js -- not sure why it is written this way
