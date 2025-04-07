@@ -4,17 +4,18 @@ import styles from "./page.module.css";
 
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
+import EstimateForm from "@/components/EstimateForm";
 
 export default function IncentivesAndFinancing() {
 
     return (
         <>
             <Header />
+            <EstimateForm />
             <main className="layout-main">
                 <div className="page-banner finance-banner">
                     <div className="banner-content">
-                        {/* <h2>Pay off your renewable energy installation with the same money your paying for utilities</h2> */}
-                        <a href="/?open_form" id="open_form"></a>
+                        <label htmlFor="start" id="open_form"></label>
                     </div>
                 </div>
                 <div className="content-main finance-content">

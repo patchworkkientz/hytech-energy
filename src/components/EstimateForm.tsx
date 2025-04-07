@@ -1,7 +1,5 @@
 "use client"
 import { useState } from "react";
-import { useSearchParams } from 'next/navigation'
-import { Suspense } from 'react'
 
 export default function EstimateForm() {
 
@@ -12,26 +10,9 @@ export default function EstimateForm() {
         setProgressBar(percentage)
     }
 
-
-    // useEffect(() => {
-
-
-    // }, []);
-
-    function OpenForm() {
-        const searchParams = useSearchParams()
-        const openForm = searchParams.has("open_form")
-        
-        if (openForm) {
-            return <input id="start" type="checkbox" defaultChecked />
-        } else {
-            return <input id="start" type="checkbox" />
-        }
-    }
-
     return (
-        <Suspense>
-            <OpenForm />
+        <>
+            <input id="start" type="checkbox" />
             <div className="wrapper_mobile">
                 <div className="progress_bar" />
             </div>
@@ -124,6 +105,6 @@ export default function EstimateForm() {
                     </div>
                 </form>
             </div>
-        </Suspense>
+        </>
     )
 }

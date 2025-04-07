@@ -40,6 +40,15 @@ footer {
 a[href="/estimates#open_form"]#open_form:target {
   display: none;
 }
+
+/* #start:checked ~ #service-form-parent {
+  display: block;
+} */
+
+/* div#service-form-parent:target {
+  display: block !important;
+} */
+
 #mobile-menu {
   display: none;
 }

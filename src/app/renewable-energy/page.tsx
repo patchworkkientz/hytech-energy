@@ -4,17 +4,19 @@ import styles from "./page.module.css";
 
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
+import EstimateForm from "@/components/EstimateForm";
 
 export default function RenewableEnergy() {
 
     return (
         <>
             <Header />
+            <EstimateForm />
             <main className="layout-main">
                 <div className="page-banner renewable-banner">
                     <div className="banner-content">
                         {/* <h1>Partially off-grid if not entirely-off!</h1> */}
-                        <a href="/?open_form" id="open_form"></a>
+                        <label htmlFor="start" id="open_form"></label>
                     </div>
                 </div>
                 <div className="content-main renewable-energy-content">

@@ -1,22 +1,23 @@
 "use client"
-import { useEffect } from "react";
+import { useState } from "react";
 import styles from "./page.module.css";
 
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
+import EstimateForm from "@/components/EstimateForm";
 
 export default function Services() {
+    const [checked, setChecked] = useState(false)
 
     return (
         <>
             {/* <input type="checkbox" id="parent" defaultChecked /> */}
             <Header />
-
+            <EstimateForm />
             <main className="layout-main">
                 <div className="page-banner services-banner">
                     <div className="banner-content">
-                        {/* <h3>Your system is tailor made to match your expectations</h3> */}
-                        <a href="/?open_form" id="open_form"></a>
+                        <label id="open_form" htmlFor="start"></label>
                     </div>
                 </div>
                 <div className="services-content content-main">

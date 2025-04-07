@@ -34,7 +34,7 @@ export default function Home() {
 
       <AnimatedBanner />
 
-      <EstimateForm />
+      <EstimateForm/>
 
       <div id="mission-head">
         <h3 id="headline">Welcome</h3>
