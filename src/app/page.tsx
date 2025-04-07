@@ -27,7 +27,7 @@ export default function Home() {
   return (
     <>
       <Head>
-        <title>HyTech Energy | Renewable Energy - Solar Panel Installations</title>
+        <title>HyTech Energy | Solar Installations & Financing Broker</title>
       </Head>
       {/* <input type="checkbox" id="parent" defaultChecked /> */}
       <Header />
