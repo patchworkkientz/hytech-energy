@@ -28,30 +28,34 @@ export default function Header() {
                             className="fas fa-solar-panel"></i></span><span>Services</span></a>
                     </li>
                     <li>
-                        <a href="/incentives-and-financing" 
-                        className={ pathname == "/incentives-and-financing" ? "tab-selected" : "" }
+                        <a href="/finance" 
+                        className={ pathname == "/finance" ? "tab-selected" : "" }
                         ><span className="menu-items-icon"><i
-                            className="fas fa-file-invoice-dollar"></i></span><span>Incentives &
-                                Financing</span></a>
+                            className="fas fa-file-invoice-dollar"></i></span><span>Finance</span></a>
                     </li>
-                    <li>
+                    {/* <li>
                         <a href="/gallery" 
                         className={ pathname == "/gallery" ? "tab-selected" : "" }
                         ><span className="menu-items-icon"><i
                             className="fas fa-home"></i></span><span>Client
                                 Gallery</span></a>
-                    </li>
+                    </li> */}
                     <li>
-                        <a href="/renewable-energy" 
+                        <a href="/renewables" 
                         className={ pathname == "/renewable-energy" ? "tab-selected" : "" }
                         ><span className="menu-items-icon"><i
-                            className="fas fa-leaf"></i></span><span>Renewable
-                                Energy</span></a>
+                            className="fas fa-leaf"></i></span><span>Renewables</span></a>
+                    </li>
+                    <li>
+                        <a href="/team" 
+                        className={ pathname == "/team" ? "tab-selected" : "" }
+                        ><span className="menu-items-icon"><i
+                            className="fas fa-leaf"></i></span><span>Team</span></a>
                     </li>
                     <li>
                         <a href="/#mission" id="hide-menu"
                         ><span className="menu-items-icon"><i
-                            className="fas fa-bullseye"></i></span><span>Our Mission</span></a>
+                            className="fas fa-bullseye"></i></span><span>Mission</span></a>
                     </li>
                 </ul>
             </nav>

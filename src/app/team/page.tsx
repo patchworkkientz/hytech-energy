@@ -3,12 +3,14 @@ import styles from "./page.module.css";
 
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
+import EstimateForm from "@/components/EstimateForm";
 
 export default function Licenses() {
 
     return (
         <>
             <Header />
+            <EstimateForm />
             <main className="layout-main mission-layout">
                 <div className="mission-banner">
                     <div id="greet">Meet the HyTech Energy Team</div>
@@ -21,7 +23,7 @@ export default function Licenses() {
                                 </div>
                                 <div className="flip-box-back">
                                     <h2>Lucus Hoehn</h2>
-                                    <p>Founder and CEO. Past includes Chief Operations Manager at Central Valley Energy Solution and other solar energy businesses. Currently a father of 2 girls.</p>
+                                    <p>Founder and CEO</p>
                                 </div>
                             </div>
                         </div>
@@ -32,7 +34,7 @@ export default function Licenses() {
                                 </div>
                                 <div className="flip-box-back">
                                     <h2>Rebecca Marsh</h2>
-                                    <p>CFO, trained accountant and married to Lucus.</p>
+                                    <p>CFO</p>
                                 </div>
                             </div>
                         </div>
@@ -43,7 +45,7 @@ export default function Licenses() {
                                 </div>
                                 <div className="flip-box-back">
                                     <h2>Sales Person</h2>
-                                    <p>Please click <a href="/?open_form">here</a>, answer a few questions and a sales person will get back to you with a free estimate.</p>
+                                    <p>Please click <label id="salesperson" htmlFor="start">here</label>, answer a few questions and a sales person will get back to you with a free estimate.</p>
                                 </div>
                             </div>
                         </div>
